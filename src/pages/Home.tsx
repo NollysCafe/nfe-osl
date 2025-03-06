@@ -11,8 +11,8 @@ export default function Home(): React.ReactElement {
 		<>
 			<Header />
 
-			<main className='page home'>
-				<Hero />
+			<main className='page home' aria-label='Home Page'>
+				<Hero aria-label='Hero Section' />
 			</main>
 		</>
 	)

@@ -11,18 +11,20 @@ export default function Header(): React.ReactElement {
 	const [menuOpen, setMenuOpen] = React.useState<boolean>(false)
 
 	return (
-		<header className='header'>
+		<header className='header' aria-label='Main Header'>
 			<div className='content'>
 				<Logo />
 
 				{/* Desktop Navbar */}
-				<nav className='desktop-navbar' children={<Navbar />} />
+				<nav className='desktop-navbar' aria-label='Desktop Navigation' children={<Navbar />} />
 
 				{/* Mobile Menu Toggle */}
-				<button className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)} aria-label='Toggle Menu'>{menuOpen ? <FaX /> : <FaBars />}</button>
+				<button className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close Menu' : 'Open Menu'} aria-expanded={menuOpen} aria-controls='mobile-navbar'>
+					{menuOpen ? <FaX /> : <FaBars />}
+				</button>
 			</div>
 
-			{menuOpen && <nav className='mobile-navbar' children={<Navbar closeMenu={() => setMenuOpen(false)} />} />}
+			{menuOpen && <nav id='mobile-navbar' className='mobile-navbar' aria-label='Mobile Navigation' children={<Navbar closeMenu={() => setMenuOpen(false)} />} />}
 		</header>
 	)
 }

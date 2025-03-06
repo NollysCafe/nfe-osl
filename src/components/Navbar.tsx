@@ -19,10 +19,10 @@ export default function Navbar({ closeMenu }: NavbarProps): React.ReactElement {
 	]
 
 	return (
-		<ul className='navbar-links'>
+		<ul className='navbar-links' aria-label='Main Navigation'>
 			{navLinks.map((link) => (
 				<li key={link.path}>
-					<NavLink to={link.path} onClick={closeMenu}>
+					<NavLink to={link.path} onClick={closeMenu} aria-label={`Navigate to ${link.name}`}>
 						{link.name}
 					</NavLink>
 				</li>
