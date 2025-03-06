@@ -1,5 +1,6 @@
 {
-  "name": "frontend",
+  "name": "nfe-osl",
+  "description": "Official website for Nolly's Fair & Ethical Open-Source License (NFE-OSL v1.0)",
   "private": true,
   "version": "1.0.0",
   "type": "module",

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './styles/main.scss'
+import './styles/theme.scss'
 
 // Components
 import { BrowserRouter } from 'react-router-dom'
