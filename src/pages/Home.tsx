@@ -1,16 +1,19 @@
 import React from 'react'
 
+import '../styles/pages/home.scss'
+
 // Components
 import Header from '../components/Header'
-import { Link } from 'react-router-dom'
+import Hero from '../components/Hero'
 
 export default function Home(): React.ReactElement {
 	return (
-		<main className='page home'>
+		<>
 			<Header />
-			<h1>Home Page</h1>
-			<Link to='/about'>About</Link>
-			<Link to='/404'>404</Link>
-		</main>
+
+			<main className='page home'>
+				<Hero />
+			</main>
+		</>
 	)
 }
