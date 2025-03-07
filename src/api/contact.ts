@@ -1,6 +1,6 @@
 import { ContactForm } from '../pages/Contact'
 
-export default function sendContactForm(data: ContactForm): Promise<void> {
+export default (data: ContactForm): Promise<void> => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			if (Math.random() > 0.1) {

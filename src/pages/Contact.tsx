@@ -1,7 +1,7 @@
 import React from 'react'
 import * as ReactHookForm from 'react-hook-form'
 import { toast } from 'react-toastify'
-import sendContatForm from '../api/contact'
+import contact from '../api/contact'
 
 import '../styles/pages/contact.scss'
 
@@ -19,7 +19,7 @@ export default function Contact(): React.ReactElement {
 
 	const onSubmit: ReactHookForm.SubmitHandler<ContactForm> = async (data) => {
 		try {
-			await sendContatForm(data)
+			await contact(data)
 			toast.success('Message sent successfully.')
 			reset()
 		} catch (error) {
