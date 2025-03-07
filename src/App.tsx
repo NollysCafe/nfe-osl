@@ -22,6 +22,7 @@ export default function App(): React.ReactElement {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/license' element={<License />} />
+				<Route path='/license/:version' element={<License />} />
 				<Route path='/generate' element={<LicenseGenerator />} />
 				<Route path='/faq' element={<FAQ />} />
 				<Route path='/compare' element={<Comparison />} />

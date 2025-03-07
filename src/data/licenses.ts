@@ -1,4 +1,16 @@
-export default `Nolly's Fair & Ethical Open-Source License (NFE-OSL v1.0)
+export interface LicenseData {
+	version: string
+	releaseDate: Date
+	description: string
+	content: string
+}
+
+export default [
+	{
+		version: 'v1.0',
+		releaseDate: new Date('March 08, 2025'),
+		description: `Initial stable release of the Nolly's Fair & Ethical Open-Source License (NFE-OSL).`,
+		content: `Nolly's Fair & Ethical Open-Source License (NFE-OSL v1.0)
 Version: 1.0
 Author: Nolly (Nolly's Cafe)
 License Base: AGPL-3.0-or-later (https://www.gnu.org/licenses/agpl-3.0.html)
@@ -50,3 +62,5 @@ The author (Nolly) and Nolly's Cafe reserve the right to enforce these terms thr
 - This license applies indefinitely (including all future versions of this software).
 - It is legally binding under EU copyright law and the Berne Convention.
 - The author reserves the right to update this license to improve protections.`
+	}
+] as LicenseData[]
