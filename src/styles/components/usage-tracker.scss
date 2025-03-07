@@ -2,20 +2,24 @@
 
 .usage-tracker {
 	width: 100%;
-	max-width: 700px;
-	margin: 2rem auto;
-	padding: 2rem;
+	max-width: 850px;
+	margin: 1.5rem auto;
+	padding: 1.5rem;
 	text-align: center;
 	border-radius: 10px;
 	background: rgba($text-color, 0.05);
 
 	@media screen and (max-width: 768px) {
-		padding: 1.5rem;
+		max-width: 85%;
 	}
 
 	h2 {
 		margin-bottom: 0.5rem;
 		color: $primary-color;
+
+		@media screen and (max-width: 768px) {
+			font-size: 1.25rem;
+		}
 	}
 
 	.tracker-content {

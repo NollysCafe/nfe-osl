@@ -7,12 +7,20 @@ import '../styles/pages/home.scss'
 import Hero from '../components/Hero'
 import FeatureCard from '../components/FeatureCard'
 import UsageTracker from '../components/UsageTracker'
+import RepoCarousel from '../components/RepoCarousel'
 
 export default function Home(): React.ReactElement {
 	return (
 		<main className='page home' aria-label='Home Page'>
 			<Hero aria-label='Hero Section' />
-			<UsageTracker />
+
+			<section className='usage'>
+				<UsageTracker />
+			</section>
+
+			<section className='repo-explorer'>
+				<RepoCarousel />
+			</section>
 
 			<section className='features'>
 				<h2>🔹 Why Choose NFE-OSL?</h2>
