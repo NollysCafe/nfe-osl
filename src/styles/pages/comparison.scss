@@ -1,132 +1,134 @@
 @use '../_variables' as *;
 
 .page.comparison {
-	max-width: 900px;
-	margin: auto;
-	padding: 2rem;
-	text-align: center;
-
-	@media screen and (max-width: 768px) {
-		padding: 1rem;
-	}
-
-	h1 {
-		margin-bottom: 0.25rem;
-		color: $primary-color;
+	div.content {
+		max-width: 900px;
+		margin: auto;
+		padding: 2rem;
+		text-align: center;
 
 		@media screen and (max-width: 768px) {
-			font-size: 1.5rem;
-		}
-	}
-
-	.comparison-description {
-		margin-bottom: 1rem;
-		font-size: 1.1rem;
-		color: lighten($text-color, 15%);
-
-		@media screen and (max-width: 768px) {
-			font-size: 1rem;
-		}
-	}
-
-	.comparison-table-container {
-		padding: 1rem;
-		border-radius: 8px;
-		border: 1px solid rgba($text-color, 0.1);
-		background-color: rgba($text-color, 0.05);
-
-		@media screen and (max-width: 768px) {
-			padding: 0.5rem;
+			padding: 1rem;
 		}
 
-		.comparison-table {
-			width: 100%;
-			border-radius: 5px;
-			color: $text-color;
-			border-collapse: collapse;
-			overflow: hidden;
+		h1 {
+			margin-bottom: 0.25rem;
+			color: $primary-color;
 
-			thead {
-				tr {
-					th {
-						padding: 0.8rem;
-						font-weight: bold;
-						text-align: left;
-						border-bottom: 1px solid rgba($text-color, 0.1);
-						color: $primary-color;
-						background-color: rgba($primary-color, 0.15);
+			@media screen and (max-width: 768px) {
+				font-size: 1.5rem;
+			}
+		}
 
-						@media screen and (max-width: 768px) {
-							padding: 0.5rem;
-						}
+		.comparison-description {
+			margin-bottom: 1rem;
+			font-size: 1.1rem;
+			color: lighten($text-color, 15%);
 
-						select {
-							width: 100%;
-							max-width: 200px;
-							padding: 0.5rem;
-							border-radius: 4px;
-							border: 1px solid rgba($text-color, 0.1);
-							color: $text-color;
-							background-color: rgba($text-color, 0.05);
+			@media screen and (max-width: 768px) {
+				font-size: 1rem;
+			}
+		}
+
+		.comparison-table-container {
+			padding: 1rem;
+			border-radius: 8px;
+			border: 1px solid rgba($text-color, 0.1);
+			background-color: rgba($text-color, 0.05);
+
+			@media screen and (max-width: 768px) {
+				padding: 0.5rem;
+			}
+
+			.comparison-table {
+				width: 100%;
+				border-radius: 5px;
+				color: $text-color;
+				border-collapse: collapse;
+				overflow: hidden;
+
+				thead {
+					tr {
+						th {
+							padding: 0.8rem;
+							font-weight: bold;
+							text-align: left;
+							border-bottom: 1px solid rgba($text-color, 0.1);
+							color: $primary-color;
+							background-color: rgba($primary-color, 0.15);
 
 							@media screen and (max-width: 768px) {
+								padding: 0.5rem;
+							}
+
+							select {
 								width: 100%;
-								max-width: 150px;
-								padding: 0.4rem;
+								max-width: 200px;
+								padding: 0.5rem;
+								border-radius: 4px;
+								border: 1px solid rgba($text-color, 0.1);
+								color: $text-color;
+								background-color: rgba($text-color, 0.05);
+
+								@media screen and (max-width: 768px) {
+									width: 100%;
+									max-width: 150px;
+									padding: 0.4rem;
+								}
 							}
 						}
 					}
 				}
-			}
 
-			tbody {
-				tr {
-					&:hover {
-						background-color: rgba($primary-color, 0.075);
-					}
-
-					td {
-						padding: 0.8rem;
-						text-align: left;
-						border-bottom: 1px solid rgba($text-color, 0.1);
-						background-color: rgba($background-color, 0.8);
-
-						@media screen and (max-width: 768px) {
-							padding: 0.5rem;
+				tbody {
+					tr {
+						&:hover {
+							background-color: rgba($primary-color, 0.075);
 						}
 
-						&:first-child {
-							font-weight: bold;
-						}
+						td {
+							padding: 0.8rem;
+							text-align: left;
+							border-bottom: 1px solid rgba($text-color, 0.1);
+							background-color: rgba($background-color, 0.8);
 
-						&:last-child {
-							text-align: right;
+							@media screen and (max-width: 768px) {
+								padding: 0.5rem;
+							}
+
+							&:first-child {
+								font-weight: bold;
+							}
+
+							&:last-child {
+								text-align: right;
+							}
 						}
 					}
 				}
-			}
 
-			tfoot {
-				tr {
-					background-color: rgba($background-color, 0.5);
-
-					&:hover {
+				tfoot {
+					tr {
 						background-color: rgba($background-color, 0.5);
-					}
 
-					td {
-						padding: 0.5rem 0.8rem;
-						font-style: italic;
-						text-align: right;
-						color: rgba($text-color, 0.625);
+						&:hover {
+							background-color: rgba($background-color, 0.5);
+						}
 
-						a {
-							text-decoration: none;
-							color: rgba($primary-color, 0.625);
-							transition: 250ms ease-in-out;
+						td {
+							padding: 0.5rem 0.8rem;
+							font-style: italic;
+							text-align: right;
+							color: rgba($text-color, 0.625);
 
-							&:hover {
-								color: rgba(darken($primary-color, 10%), 0.625);
+							a {
+								text-decoration: none;
+								color: rgba($primary-color, 0.625);
+								transition: 250ms ease-in-out;
+
+								&:hover {
+									color: rgba(darken($primary-color, 10%), 0.625);
+								}
 							}
 						}
 					}
