@@ -1,34 +1,75 @@
 @use '../_variables' as *;
 
 .badge-generator {
-	display: block;
-	width: 100%;
-	margin-top: 2rem;
-	padding: 1.5rem;
-	text-align: center;
+	max-width: 900px;
+	margin: auto;
+	padding: 1rem;
 	border-radius: 8px;
 	background: rgba($text-color, 0.05);
-	border: 1px solid rgba($text-color, 0.1);
+	text-align: center;
 
-	h3 {
-		margin-bottom: 0.5rem;
+	.collapsible-header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.2rem;
+		font-weight: bold;
+		padding: 0.5rem;
+		border: none;
+		background: none;
 		color: $primary-color;
+		cursor: pointer;
+		transition: color 250ms ease-in-out;
+
+		&:hover {
+			color: lighten($primary-color, 10%);
+		}
+	}
+
+	.badge-content {
+		margin-top: 1rem;
+	}
+
+	.badge-selector {
+		margin-bottom: 1rem;
+
+		label {
+			font-weight: bold;
+			margin-right: 0.5rem;
+		}
+
+		select {
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: 1px solid rgba($text-color, 0.1);
+			background-color: rgba($text-color, 0.05);
+			color: $text-color;
+			cursor: pointer;
+			transition: border-color 250ms ease-in-out;
+
+			&:hover,
+			&:focus {
+				border-color: $primary-color;
+			}
+		}
 	}
 
 	.badge-preview {
-		margin: 1rem 0;
+		margin-bottom: 1rem;
 
 		img {
-			border-radius: 5px;
-			box-shadow: 0 2px 6px rgba($text-color, 0.2);
+			max-width: 100%;
 		}
 	}
 
 	.badge-code {
-		margin-top: 1rem;
+		margin-bottom: 1rem;
 		text-align: left;
 
 		label {
+			display: block;
+			margin-bottom: 0.25rem;
 			font-weight: bold;
 			color: $text-color;
 		}
@@ -39,24 +80,23 @@
 			justify-content: space-between;
 			padding: 0.5rem;
 			border-radius: 5px;
-			background: rgba($text-color, 0.05);
 			border: 1px solid rgba($text-color, 0.1);
-			font-size: 0.9rem;
+			background: rgba($background-color, 0.8);
+			color: $text-color;
+			font-family: monospace;
 
 			code {
-				flex: 1;
 				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
+				overflow-x: auto;
+				max-width: 85%;
 			}
 
 			button {
 				cursor: pointer;
-				border: none;
 				background: none;
+				border: none;
 				color: $primary-color;
-				font-size: 1rem;
-				padding: 0.2rem;
+				font-size: 1.2rem;
 				transition: color 250ms ease-in-out;
 
 				&:hover {

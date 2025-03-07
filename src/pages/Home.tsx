@@ -4,11 +4,12 @@ import * as homeContent from '../data/homeContent'
 import '../styles/pages/home.scss'
 
 // Components
+import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import FeatureCard from '../components/FeatureCard'
 import UsageTracker from '../components/UsageTracker'
 import RepoCarousel from '../components/RepoCarousel'
-import { Link } from 'react-router-dom'
+import YearlyReport from '../components/YearlyReport'
 
 export default function Home(): React.ReactElement {
 	return (
@@ -22,6 +23,8 @@ export default function Home(): React.ReactElement {
 			<section className='repo-explorer'>
 				<RepoCarousel />
 			</section>
+
+			<YearlyReport />
 
 			<section className='check-compliance'>
 				<h2>🔍 Check Compliance</h2>

@@ -53,6 +53,8 @@ export default function License(): React.ReactElement {
 					</select>
 				</div>
 
+				<BadgeGenerator />
+
 				<div className='download-buttons'>
 					<button className='button primary' onClick={() => downloadLicense('txt')} aria-label='Download License as Text'>Download as TXT</button>
 					<button className='button secondary' onClick={() => downloadLicense('md')} aria-label='Download License as Markdown'>Download as MD</button>
@@ -67,8 +69,6 @@ export default function License(): React.ReactElement {
 						/>
 					))}
 				</section>
-
-				<BadgeGenerator />
 			</div>
 		</main>
 	)

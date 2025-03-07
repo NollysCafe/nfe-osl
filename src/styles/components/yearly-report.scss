@@ -1,0 +1,51 @@
+@use '../_variables' as *;
+
+.yearly-report {
+	max-width: 850px;
+	margin: 0 auto 1.5rem;
+	padding: 1rem;
+	border-radius: 8px;
+	background-color: rgba($text-color, 0.05);
+
+	@media screen and (max-width: 768px) {
+		max-width: 85vw;
+	}
+
+	.collapsible-header {
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.5rem;
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: $primary-color;
+		background-color: transparent;
+		transition: 250ms ease-in-out;
+
+		&:hover {
+			color: lighten($primary-color, 10%);
+		}
+	}
+
+	.report-content {
+		width: fit-content;
+		margin: auto;
+		padding: 1rem;
+		border-radius: 8px;
+
+		h3 {
+			margin-bottom: 0.5rem;
+			font-size: 1.25rem;
+			color: $primary-color;
+		}
+
+		p {
+			margin-bottom: 0.25rem;
+			padding: 0 0.5rem;
+			font-size: 1rem;
+			color: lighten($text-color, 15%);
+		}
+	}
+}
