@@ -12,6 +12,8 @@ export default function Footer(): React.ReactElement {
 		<footer className='footer' aria-label='Site Footer'>
 			<div className='content'>
 				<nav className='links' aria-label='Footer Navigation'>
+					<Link to='/explore'>Explore Repos</Link>
+					<Link to='/compliance'>Compliance Test</Link>
 				</nav>
 
 				<div className='social'>
