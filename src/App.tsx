@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 // Views
 import Home from './pages/Home'
 import License from './pages/License'
+import LicenseGenerator from './pages/LicenseGenerator'
 import FAQ from './pages/FAQ'
 import Comparison from './pages/Comparison'
 import Contact from './pages/Contact'
@@ -21,6 +22,7 @@ export default function App(): React.ReactElement {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/license' element={<License />} />
+				<Route path='/generate' element={<LicenseGenerator />} />
 				<Route path='/faq' element={<FAQ />} />
 				<Route path='/compare' element={<Comparison />} />
 				<Route path='/contact' element={<Contact />} />

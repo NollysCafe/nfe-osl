@@ -13,6 +13,7 @@ export default function Footer(): React.ReactElement {
 			<div className='content'>
 				<nav className='links' aria-label='Footer Navigation'>
 					<Link to='/license' aria-label='Read the License'>License</Link>
+					<Link to='/generate' aria-label='Generate your License'>Generate</Link>
 					<Link to='/faq' aria-label='Frequently Asked Questions'>FAQ</Link>
 					<Link to='/compare' aria-label='License Comparison'>Compare</Link>
 					<Link to='/contact' aria-label='Contact Page'>Contact</Link>
