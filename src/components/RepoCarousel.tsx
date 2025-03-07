@@ -28,7 +28,7 @@ export default function RepoCarousel(): React.ReactElement {
 							<img src={repo.owner.avatar_url} alt={`${repo.owner.login}'s avatar`} className='avatar' />
 							<div className='repo-info'>
 								<h3>{repo.name}</h3>
-								<p>{repo.description || 'No description provided.'}</p>
+								<p>{repo.description ? repo.description.length > 30 ? `${repo.description.slice(0, 30)}...` : repo.description : 'No description provided'}</p>
 								<div className='repo-stats'>
 									<span><FaStar /> {repo.stargazers_count}</span>
 									<span><FaCodeBranch /> {repo.forks_count}</span>

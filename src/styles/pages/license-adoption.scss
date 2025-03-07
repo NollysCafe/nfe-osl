@@ -1,0 +1,33 @@
+@use '../_variables' as *;
+
+.page.license-adoption {
+	div.content {
+		max-width: 900px;
+		margin: auto;
+		padding: 2rem;
+		text-align: center;
+
+		@media screen and (max-width: 768px) {
+			padding: 1rem;
+		}
+
+		h1 {
+			margin-bottom: 1rem;
+			color: $primary-color;
+		}
+
+		.adoption-description {
+			margin-bottom: 1.5rem;
+			font-size: 1.1rem;
+			color: lighten($text-color, 15%);
+		}
+
+		svg {
+			width: 100%;
+			height: auto;
+			max-width: 800px;
+			border-radius: 8px;
+			background-color: rgba($text-color, 0.05);
+		}
+	}
+}

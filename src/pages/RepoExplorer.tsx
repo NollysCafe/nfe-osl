@@ -21,18 +21,20 @@ export default function RepoExplorer(): React.ReactElement {
 
 	return (
 		<main className='page repo-explorer'>
-			<h1>🔍 Explore Open-Source Projects Using NFE-OSL</h1>
-			<div className='search-bar'>
-				<input type='text' placeholder='Search repositories...' value={search} onChange={(e) => setSearch(e.target.value)} />
-				<FaMagnifyingGlass />
-			</div>
-			<div className='repo-list'>
-				{filteredRepos.length > 0 ? filteredRepos.map((repo) => (
-					<a key={repo.id} href={repo.html_url} target='_blank' rel='noopener noreferrer' className='repo-item'>
-						<h3>{repo.full_name}</h3>
-						<p>{repo.description || 'No description available.'}</p>
-					</a>
-				)) : <p>No repositories found.</p>}
+			<div className='content'>
+				<h1>🔍 Explore Open-Source Projects Using NFE-OSL</h1>
+				<div className='search-bar'>
+					<input type='text' placeholder='Search repositories...' value={search} onChange={(e) => setSearch(e.target.value)} />
+					<FaMagnifyingGlass />
+				</div>
+				<div className='repo-list'>
+					{filteredRepos.length > 0 ? filteredRepos.map((repo) => (
+						<a key={repo.id} href={repo.html_url} target='_blank' rel='noopener noreferrer' className='repo-item'>
+							<h3>{repo.full_name}</h3>
+							<p>{repo.description || 'No description available.'}</p>
+						</a>
+					)) : <p>No repositories found.</p>}
+				</div>
 			</div>
 		</main>
 	)

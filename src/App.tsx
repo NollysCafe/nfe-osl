@@ -13,6 +13,7 @@ import License from './pages/License'
 import LicenseGenerator from './pages/LicenseGenerator'
 import FAQ from './pages/FAQ'
 import Comparison from './pages/Comparison'
+import LicenseAdoption from './pages/LicenseAdoption'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
@@ -30,6 +31,7 @@ export default function App(): React.ReactElement {
 				<Route path='/generate' element={<LicenseGenerator />} />
 				<Route path='/faq' element={<FAQ />} />
 				<Route path='/compare' element={<Comparison />} />
+				<Route path='/adoption' element={<LicenseAdoption />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>

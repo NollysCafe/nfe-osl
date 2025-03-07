@@ -1,97 +1,99 @@
 @use '../_variables' as *;
 
 .page.repo-explorer {
-	max-width: 900px;
-	margin: auto;
-	padding: 2rem;
-	text-align: center;
-
-	@media screen and (max-width: 768px) {
-		padding: 1rem;
-	}
-
-	h1 {
-		margin-bottom: 1rem;
-		font-size: 1.8rem;
-		color: $primary-color;
+	div.content {
+		max-width: 900px;
+		margin: auto;
+		padding: 2rem;
+		text-align: center;
 
 		@media screen and (max-width: 768px) {
-			font-size: 1.5rem;
+			padding: 1rem;
 		}
-	}
 
-	.search-bar {
-		position: relative;
+		h1 {
+			margin-bottom: 1rem;
+			font-size: 1.8rem;
+			color: $primary-color;
 
-		input {
-			width: 100%;
-			margin-bottom: 1.5rem;
-			padding: 0.75rem;
-			font-size: 1rem;
-			border-radius: 8px;
-			border: 1px solid rgba($text-color, 0.1);
-			color: $text-color;
-			background-color: rgba($text-color, 0.05);
-			transition: 250ms ease-in-out;
-
-			&::placeholder {
-				color: lighten($text-color, 30%);
+			@media screen and (max-width: 768px) {
+				font-size: 1.5rem;
 			}
+		}
 
-			&:focus {
-				border-color: $primary-color;
+		.search-bar {
+			position: relative;
 
-				+svg {
-					color: $primary-color;
+			input {
+				width: 100%;
+				margin-bottom: 1.5rem;
+				padding: 0.75rem;
+				font-size: 1rem;
+				border-radius: 8px;
+				border: 1px solid rgba($text-color, 0.1);
+				color: $text-color;
+				background-color: rgba($text-color, 0.05);
+				transition: 250ms ease-in-out;
+
+				&::placeholder {
+					color: lighten($text-color, 30%);
+				}
+
+				&:focus {
+					border-color: $primary-color;
+
+					+svg {
+						color: $primary-color;
+					}
 				}
 			}
-		}
 
-		svg {
-			position: absolute;
-			right: 1rem;
-			transform: translateY(75%);
-			font-size: 1.2rem;
-			color: $text-color;
-			transition: 250ms ease-in-out;
-		}
-	}
-
-	.repo-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 1.5rem;
-
-		@media screen and (max-width: 768px) {
-			grid-template-columns: 1fr;
-		}
-
-		.repo-item {
-			display: flex;
-			flex-direction: column;
-			padding: 1rem;
-			text-align: left;
-			text-decoration: none;
-			border-radius: 8px;
-			border: 1px solid rgba($text-color, 0.1);
-			color: $text-color;
-			background-color: rgba($text-color, 0.05);
-			transition: 250ms ease-in-out;
-
-			&:hover {
-				transform: translateY(-5px);
-				background-color: rgba($primary-color, 0.075);
-			}
-
-			h3 {
-				margin-bottom: 0.25rem;
+			svg {
+				position: absolute;
+				right: 1rem;
+				transform: translateY(75%);
 				font-size: 1.2rem;
-				color: $primary-color;
+				color: $text-color;
+				transition: 250ms ease-in-out;
+			}
+		}
+
+		.repo-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 1.5rem;
+
+			@media screen and (max-width: 768px) {
+				grid-template-columns: 1fr;
 			}
 
-			p {
-				font-size: 0.95rem;
-				color: lighten($text-color, 20%);
+			.repo-item {
+				display: flex;
+				flex-direction: column;
+				padding: 1rem;
+				text-align: left;
+				text-decoration: none;
+				border-radius: 8px;
+				border: 1px solid rgba($text-color, 0.1);
+				color: $text-color;
+				background-color: rgba($text-color, 0.05);
+				transition: 250ms ease-in-out;
+
+				&:hover {
+					transform: translateY(-5px);
+					background-color: rgba($primary-color, 0.075);
+				}
+
+				h3 {
+					margin-bottom: 0.25rem;
+					font-size: 1.2rem;
+					color: $primary-color;
+				}
+
+				p {
+					font-size: 0.95rem;
+					color: lighten($text-color, 20%);
+				}
 			}
 		}
 	}

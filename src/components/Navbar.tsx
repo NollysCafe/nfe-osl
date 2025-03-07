@@ -16,6 +16,7 @@ export default function Navbar({ closeMenu }: NavbarProps): React.ReactElement {
 		{ name: 'Generate', path: '/generate' },
 		{ name: 'FAQ', path: '/faq' },
 		{ name: 'Compare', path: '/compare' },
+		{ name: 'Adoption Map', path: '/adoption' },
 		{ name: 'Contact', path: '/contact' }
 	]
 
