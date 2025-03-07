@@ -18,8 +18,10 @@ body,
 	flex-direction: column;
 	color: $text-color;
 	background-color: $background-color;
+	overflow: hidden;
 
 	>main.page {
 		flex: 1;
+		overflow-y: auto;
 	}
 }

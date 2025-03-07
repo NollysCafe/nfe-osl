@@ -2,8 +2,10 @@ import React from 'react'
 
 // Components
 import { Link } from 'react-router-dom'
+import { FaChevronDown } from 'react-icons/fa6'
 
 export default function Hero(): React.ReactElement {
+
 	return (
 		<section className='hero' aria-labelledby='hero-heading' aria-describedby='hero-description'>
 			<div className='content'>
@@ -15,6 +17,11 @@ export default function Hero(): React.ReactElement {
 					<Link to='/faq' className='button secondary' aria-label='Learn More'>Learn More</Link>
 				</div>
 			</div>
+
+			<span className='icon' aria-label='Scroll Down'>
+				<b aria-hidden='true'>Scroll Down</b>
+				<FaChevronDown />
+			</span>
 		</section>
 	)
 }
