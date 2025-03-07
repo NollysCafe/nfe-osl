@@ -17,7 +17,7 @@ root.render(
 	<BrowserRouter>
 		<App />
 
-		<ToastContainer position='bottom-right' autoClose={3500} newestOnTop={true} />
+		<ToastContainer position='bottom-right' theme='dark' autoClose={3500} newestOnTop={true} />
 	</BrowserRouter>
 )
 

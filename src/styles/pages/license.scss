@@ -106,8 +106,8 @@ main.page.license {
 			}
 
 			.collapsible-section {
-				width: 900px;
-				max-width: 900px;
+				width: calc(900px - 4rem);
+				max-width: calc(900px - 4rem);
 				margin-bottom: 1rem;
 				padding-bottom: 1rem;
 				border-bottom: thin solid rgba($text-color, 0.1);

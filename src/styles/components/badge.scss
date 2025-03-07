@@ -1,0 +1,68 @@
+@use '../_variables' as *;
+
+.badge-generator {
+	display: block;
+	width: 100%;
+	margin-top: 2rem;
+	padding: 1.5rem;
+	text-align: center;
+	border-radius: 8px;
+	background: rgba($text-color, 0.05);
+	border: 1px solid rgba($text-color, 0.1);
+
+	h3 {
+		margin-bottom: 0.5rem;
+		color: $primary-color;
+	}
+
+	.badge-preview {
+		margin: 1rem 0;
+
+		img {
+			border-radius: 5px;
+			box-shadow: 0 2px 6px rgba($text-color, 0.2);
+		}
+	}
+
+	.badge-code {
+		margin-top: 1rem;
+		text-align: left;
+
+		label {
+			font-weight: bold;
+			color: $text-color;
+		}
+
+		.code-box {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0.5rem;
+			border-radius: 5px;
+			background: rgba($text-color, 0.05);
+			border: 1px solid rgba($text-color, 0.1);
+			font-size: 0.9rem;
+
+			code {
+				flex: 1;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			button {
+				cursor: pointer;
+				border: none;
+				background: none;
+				color: $primary-color;
+				font-size: 1rem;
+				padding: 0.2rem;
+				transition: color 250ms ease-in-out;
+
+				&:hover {
+					color: lighten($primary-color, 10%);
+				}
+			}
+		}
+	}
+}

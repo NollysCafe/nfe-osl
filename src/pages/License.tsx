@@ -7,6 +7,7 @@ import { toast } from 'react-toastify'
 import '../styles/pages/license.scss'
 
 // Components
+import BadgeGenerator from '../components/BadgeGenerator'
 import CollapsibleSection from '../components/CollapsibleSection'
 
 export default function License(): React.ReactElement {
@@ -66,6 +67,8 @@ export default function License(): React.ReactElement {
 						/>
 					))}
 				</section>
+
+				<BadgeGenerator />
 			</div>
 		</main>
 	)
