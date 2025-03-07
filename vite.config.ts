@@ -13,5 +13,8 @@ export default defineConfig({
     emptyOutDir: true,
     outDir: path.resolve(__dirname, 'dist'),
     sourcemap: true,
+    minify: 'esbuild',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
   },
 })
