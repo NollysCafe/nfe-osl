@@ -14,7 +14,7 @@ if (!container) throw new Error('Root element not found')
 
 const root = ReactDOM.createRoot(container)
 root.render(
-	<BrowserRouter basename='/nfe-osl'>
+	<BrowserRouter basename='/nfe-osl/'>
 		<App />
 
 		<ToastContainer position='bottom-right' theme='dark' autoClose={3500} newestOnTop={true} />
