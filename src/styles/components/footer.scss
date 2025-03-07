@@ -1,0 +1,75 @@
+@use '../_variables' as *;
+
+.footer {
+	width: 100%;
+	padding: 0.75rem 1.5rem;
+	text-align: center;
+	border-top: 2px solid rgba($text-color, 0.1);
+	background-color: rgba($background-color, 0.8);
+
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 0.25rem;
+			margin-bottom: 0.25rem;
+		}
+
+		.links {
+			display: flex;
+			gap: 1.5rem;
+
+			a {
+				color: $text-color;
+				text-decoration: none;
+				font-weight: bold;
+				transition: 250ms ease-in-out;
+
+				&:hover {
+					color: lighten($primary-color, 10%);
+				}
+			}
+		}
+
+		.social {
+			display: flex;
+			gap: 1rem;
+			font-size: 1.5rem;
+
+			a {
+				color: $text-color;
+				transition: 250ms ease-in-out;
+
+				@media screen and (max-width: 768px) {
+					font-size: 1.25rem;
+				}
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	.copyright {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 0.125rem;
+		font-size: 0.875rem;
+		color: lighten($text-color, 20%);
+
+		svg {
+			margin-right: 0.25rem;
+		}
+
+		b {
+			margin-left: 0.25rem;
+			color: $primary-color;
+		}
+	}
+}

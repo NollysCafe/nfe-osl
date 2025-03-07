@@ -4,20 +4,15 @@ import comparison from '../data/comparison'
 import '../styles/pages/comparison.scss'
 
 // Components
-import Header from '../components/Header'
 import ComparisonTable from '../components/ComparisonTable'
 
 export default function Comparison(): React.ReactElement {
 	return (
-		<>
-			<Header />
+		<main className='page comparison' aria-labelledby='comparison-heading'>
+			<h1 id='comparison-heading'>License Comparison</h1>
+			<p className='comparison-description'>See how NFE-OSL compares to other popular open-source licenses.</p>
 
-			<main className='page comparison' aria-labelledby='comparison-heading'>
-				<h1 id='comparison-heading'>License Comparison</h1>
-				<p className='comparison-description'>See how NFE-OSL compares to other popular open-source licenses.</p>
-
-				<ComparisonTable data={comparison} />
-			</main>
-		</>
+			<ComparisonTable data={comparison} />
+		</main>
 	)
 }
