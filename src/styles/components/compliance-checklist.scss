@@ -1,0 +1,95 @@
+@use '../_variables' as *;
+
+.compliance-checklist {
+	max-width: 900px;
+	margin: auto;
+	text-align: center;
+
+	@media screen and (max-width: 768px) {
+		padding: 0;
+	}
+
+	h2 {
+		margin-bottom: 1.5rem;
+		color: $primary-color;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			padding: 1rem;
+			margin-bottom: 1rem;
+			border-radius: 8px;
+			background: rgba($text-color, 0.05);
+			text-align: left;
+			transition: 250ms ease-in-out;
+
+			&:hover {
+				transform: translateY(-5px);
+			}
+
+			label {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				font-weight: bold;
+				color: $text-color;
+
+				input[type='checkbox'] {
+					cursor: pointer;
+					width: 18px;
+					height: 18px;
+					appearance: none;
+					transform: scale(1.2);
+					border-radius: 3px;
+					border: 1px solid rgba($text-color, 0.5);
+					background-color: $background-color;
+					transition: 250ms ease-in-out;
+
+					&:hover {
+						border-color: $primary-color;
+					}
+
+					&:checked {
+						border-color: $primary-color;
+						background-color: $primary-color;
+					}
+				}
+			}
+
+			p {
+				margin-top: 0.5rem;
+				font-size: 0.9rem;
+				color: lighten($text-color, 20%);
+			}
+
+			.fix-suggestion {
+				display: block;
+				margin-top: 0.5rem;
+				font-size: 0.85rem;
+				color: rgba($text-color, 0.8);
+			}
+		}
+	}
+
+	.button {
+		cursor: pointer;
+		margin-top: 2rem;
+		padding: 0.8rem;
+		font-weight: bold;
+		border-radius: 5px;
+		transition: 250ms ease-in-out;
+
+		&.primary {
+			color: $background-color;
+			background-color: $primary-color;
+
+			&:hover {
+				background-color: lighten($primary-color, 10%);
+			}
+		}
+	}
+}

@@ -112,6 +112,42 @@ main.page.home {
 		}
 	}
 
+	section.check-compliance {
+		width: 100%;
+		max-width: 850px;
+		margin: 0 auto;
+		padding: 1.5rem;
+		text-align: center;
+		border-radius: 8px;
+		background-color: rgba($text-color, 0.05);
+
+		@media screen and (max-width: 768px) {
+			max-width: 85%;
+		}
+
+		h2 {
+			margin-bottom: 1rem;
+			color: $primary-color;
+
+			@media screen and (max-width: 768px) {
+				font-size: 1.25rem;
+			}
+		}
+
+		a {
+			padding: 0.125rem 0.25rem;
+			font-weight: bold;
+			text-decoration: none;
+			border-radius: 5px;
+			color: $primary-color;
+			transition: 250ms ease-in-out;
+
+			&:hover {
+				background-color: rgba($primary-color, 0.1);
+			}
+		}
+	}
+
 	section.features,
 	section.weaknesses,
 	section.verdict {

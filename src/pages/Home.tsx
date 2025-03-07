@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import FeatureCard from '../components/FeatureCard'
 import UsageTracker from '../components/UsageTracker'
 import RepoCarousel from '../components/RepoCarousel'
+import { Link } from 'react-router-dom'
 
 export default function Home(): React.ReactElement {
 	return (
@@ -20,6 +21,14 @@ export default function Home(): React.ReactElement {
 
 			<section className='repo-explorer'>
 				<RepoCarousel />
+			</section>
+
+			<section className='check-compliance'>
+				<h2>🔍 Check Compliance</h2>
+				<p>
+					Before you proceed, please ensure that you have read and understood the{' '}
+					<Link to='/compliance'>compliance requirements</Link> of the NFE-OSL.
+				</p>
 			</section>
 
 			<section className='features'>
