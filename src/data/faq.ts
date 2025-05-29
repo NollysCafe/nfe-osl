@@ -1,22 +1,22 @@
 export default [
 	{
-		question: 'What is the Nolly\'s Fair & Ethical Open-Source License (NFE-OSL)?',
-		answer: 'The NFE-OSL is an open-source license based on AGPL-3.0, with added ethical and fair-use clauses to protect user privacy, prevent misuse in unethical applications, and ensure proper attribution.'
+		question: `What is the Nolly's Fair & Ethical Open-Source License (NFE-OSL)?`,
+		answer: 'The NFE-OSL is an independent open-source license designed to protect user rights, enforce ethical use, and ensure proper attribution. It is not based on any OSI-approved license, but promotes fair and responsible open-source collaboration.'
 	},
 	{
 		question: 'Can I use this license for my own projects?',
-		answer: 'Yes! As long as you comply with the terms, you are free to use NFE-OSL for your open-source projects.'
+		answer: `Yes — as long as you agree to the terms, you are welcome to apply NFE-OSL to your own open-source projects. It's intended for ethical developers who value transparency and accountability.`
 	},
 	{
 		question: 'Is commercial use allowed under NFE-OSL?',
-		answer: 'Commercial use is only allowed if you either contribute back to the project or obtain explicit permission from the author.'
+		answer: 'Commercial use is allowed **only** with explicit permission from the author. This may involve financial contribution or code contributions back to the project.'
 	},
 	{
 		question: 'Does this license allow AI or machine learning usage?',
-		answer: 'Yes, but any AI models trained using this software must be released under the same open-source terms, and commercial AI usage requires explicit approval.'
+		answer: `AI and data use are permitted **only** under specific conditions: models or datasets must remain open-source under the same license, and commercial AI use requires the author's explicit approval.`
 	},
 	{
 		question: 'What happens if someone violates the license?',
-		answer: 'If someone violates the license, they must immediately stop using the software and may be held legally accountable for damages and legal fees.'
+		answer: 'Violating the license immediately terminates your rights to use the software. The author reserves the right to take legal action, including financial claims for damages.'
 	}
 ]

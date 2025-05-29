@@ -7,39 +7,39 @@ export interface ComplianceItem {
 
 export const complianceChecklist: ComplianceItem[] = [
 	{
-		id: 'base-license',
-		title: 'License Adherence',
-		description: 'Ensure that your project remains licensed under AGPL-3.0-or-later, with no modifications violating its terms.',
-		fixSuggestion: 'Review the AGPL-3.0 terms and ensure all modifications remain open-source.'
+		id: 'custom-license',
+		title: 'License Application',
+		description: 'Ensure your project clearly uses and references the NFE-OSL v1.0 license.',
+		fixSuggestion: 'Include the full license text in your repository and mention it in the README and metadata.'
 	},
 	{
 		id: 'fair-attribution',
 		title: 'Fair Attribution',
-		description: 'Provide visible credit to the author in the UI, website, or documentation.',
-		fixSuggestion: 'Ensure the attribution is placed in an accessible location (e.g., "About" section or footer).'
+		description: 'Provide visible credit to the author (e.g., in UI, website footer, or documentation).',
+		fixSuggestion: 'Ensure the attribution is consistently visible and not buried (e.g., "About" section or Open Source page).'
 	},
 	{
 		id: 'commercial-use',
-		title: 'Commercial Usage Compliance',
-		description: 'If using this license commercially, you must obtain explicit permission.',
-		fixSuggestion: 'Contact the author and ensure compliance before any monetization.'
+		title: 'Commercial Use Compliance',
+		description: 'Commercial use requires prior permission and may involve contribution or financial support.',
+		fixSuggestion: 'Contact the author before monetizing, and document permission or contribution terms.'
 	},
 	{
 		id: 'ethical-use',
 		title: 'Ethical Use Restrictions',
-		description: 'Confirm that the software is not used for military, surveillance, or unethical AI purposes.',
-		fixSuggestion: 'Restrict usage in your terms and verify clients comply.'
+		description: 'Verify that the software is not used in military, surveillance, or unethical personal data contexts.',
+		fixSuggestion: 'Explicitly prohibit unethical uses in your terms and contracts; vet clients and partners.'
 	},
 	{
-		id: 'ai-training',
-		title: 'AI & Data Compliance',
-		description: 'Ensure AI models trained on this software remain open-source under the same license.',
-		fixSuggestion: 'Verify AI usage policies and provide clear open-source release conditions.'
+		id: 'ai-usage',
+		title: 'AI & Data Use Compliance',
+		description: 'AI/data use must be permitted by the author and may require releasing derived models under the same terms.',
+		fixSuggestion: 'Confirm permission for AI-related use and clearly license any trained models or datasets as required.'
 	},
 	{
-		id: 'violations',
-		title: 'Violation Response',
-		description: 'Have a policy to address violations and enforce license terms.',
-		fixSuggestion: 'Implement internal procedures to cease license usage if violations occur.'
+		id: 'violation-response',
+		title: 'License Violation Handling',
+		description: 'Have internal procedures to detect, report, and stop violations of license terms.',
+		fixSuggestion: 'Create a compliance policy and automate checks for unauthorized or unethical uses.'
 	}
 ]

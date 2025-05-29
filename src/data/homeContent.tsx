@@ -3,23 +3,23 @@ import { FaShield, FaLock, FaScaleBalanced, FaUsers } from 'react-icons/fa6'
 export const strengths = [
 	{
 		icon: <FaShield />,
-		title: 'Ethical Use Restrictions',
-		description: 'Unlike traditional open-source licenses, NFE-OSL prevents unethical applications such as military, surveillance, and exploitative AI.'
+		title: 'Enforced Ethical Use',
+		description: 'NFE-OSL explicitly bans unethical use such as military, surveillance, and privacy-invasive AI — something no OSI license currently enforces.'
 	},
 	{
 		icon: <FaScaleBalanced />,
-		title: 'Strong Copyleft Protection',
-		description: 'Similar to AGPL, it ensures all modified versions remain open-source, even for SaaS applications.'
+		title: 'Custom Ethical Copyleft',
+		description: 'Unlike permissive or standard copyleft licenses, it ensures fairness by requiring attribution, open-source continuity, and ethical compliance — even for SaaS or data-based applications.'
 	},
 	{
 		icon: <FaLock />,
-		title: 'Fair Commercial Rules',
-		description: 'Prevents corporations from monetizing software without permission or contribution, making open-source sustainable.'
+		title: 'Fair Commercial Conditions',
+		description: 'Prevents exploitative monetization by requiring explicit permission or contribution — empowering creators and discouraging corporate freeloading.'
 	},
 	{
 		icon: <FaUsers />,
-		title: 'AI Training Restrictions',
-		description: 'Requires AI models trained on this software to be open-source, preventing closed-source exploitation.'
+		title: 'AI Use Accountability',
+		description: 'Prohibits commercial AI training without consent, and mandates open licensing of derivative datasets or models — reducing risk of closed-source exploitation.'
 	}
 ]
 
@@ -27,14 +27,14 @@ export const weaknesses = [
 	{
 		icon: <FaShield />,
 		title: 'License Compatibility',
-		description: 'Incompatible with MIT, BSD, and Apache due to strong copyleft provisions, similar to AGPL.'
+		description: 'Not compatible with permissive licenses like MIT, BSD, or Apache due to its ethical and permission-based clauses.'
 	},
 	{
 		icon: <FaScaleBalanced />,
-		title: 'Commercial Adoption Hurdles',
-		description: 'Requiring permission for some commercial use may slow down adoption compared to permissive licenses.'
+		title: 'Barrier to Commercial Adoption',
+		description: 'Requiring permission for commercial use may deter businesses looking for zero-friction licenses — even if it encourages fairer practices.'
 	}
 ]
 
-export const verdict = `NFE-OSL is a forward-thinking license tackling modern ethical and business concerns in open-source.
-It offers a viable alternative for developers who care about the long-term impact of their work.`
+export const verdict = `NFE-OSL is a modern ethical license crafted for developers who want to protect their work from misuse, ensure fair credit, and foster responsible AI and commercial practices.
+It's not for everyone — but it's perfect for creators who believe open-source should serve people, not just profit.`
